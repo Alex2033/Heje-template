@@ -1,0 +1,191 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    title Heje
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(property='og:image', content='path/to/image.jpg')
+    link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
+    link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
+    // Chrome, Firefox OS and Opera
+    meta(name='theme-color', content='#000')
+    // Windows Phone
+    meta(name='msapplication-navbutton-color', content='#000')
+    // iOS Safari
+    meta(name='apple-mobile-web-app-status-bar-style', content='#000')
+    link(rel='stylesheet', href='css/main.min.css')
+  body
+
+    // WRAPPER 
+    .wrapper
+
+      // HEADER 
+      include ../modules/header
+      // HEADER-END 
+
+      // NAVIGATION
+      nav.navigation
+
+        button.responsive-menu Меню
+
+        .container.navigation__container
+          ul.navigation-list
+            li.navigation-list__item
+              a(href="#").navigation-list__link Главная
+            li.navigation-list__item
+              a(href="#").navigation-list__link О нас
+            li.navigation-list__item
+              a(href="#").navigation-list__link Услуги 
+            li.navigation-list__item
+              a(href="#").navigation-list__link Наши работы 
+            li.navigation-list__item
+              a(href="#").navigation-list__link Контакты 
+
+      // NAVIGATION-END
+        
+      // MAIN-CONTENT 
+      main.main-content
+        
+        // ABOUT 
+        section.about
+          .container.about__container
+            .about__left
+              h2.about__title Студия
+            .about__right
+              .about__text
+                p.
+                  Основная специализация — проектирование сайов и landing page. 
+                  Наша команда, состоящая из дизайнеров, маркетологов и программистов, 
+                  поддерживает каждый проект на протяжении всей его жизни. Студия 
+                  занимается разработкой индивидуального дизайна, оптимизацией 
+                  скорости работы продукта, предоставляет услуги по продвижению сайтов.
+
+        // ABOUT-END
+ 
+        // SERVICES
+
+        section.services
+
+          .container
+
+            ul.services-list
+
+              li.services-list__item
+                .services-list__icon
+                  i.fas.fa-rocket
+                h5.services-list__title Старт
+                .services-list__text
+                  p.
+                    Вы хотите получать больше клиентов 
+                    и прибыли из интернета?С нуля разработаем 
+                    сайт любой сложности,учитывая индивидуальные
+                    особенности вашего бизнеса. Стоимость создания 
+                    сайта в каждом конкретном случае индивидуальна 
+                    и рассчитывается исходя из пожеланий и 
+                    требований клиента.
+                footer.services-list__footer.service-footer
+                  a(href="javascript:void(0);").services-list__link от 1000 руб.
+                  button.jump-btn
+                    i.fas.fa-arrow-right   
+
+              li.services-list__item
+                .services-list__icon
+                  i.fas.fa-mobile-alt
+                h5.services-list__title Продвижение
+                .services-list__text
+                  p.
+                    Одним из важнейших этапов продвижения 
+                    сайта является поисковая оптимизация (SEO), 
+                    которая представляет собой комплекс мер по 
+                    повышению позиции сайта в поисковых 
+                    системах, и, таким образом, позволяет 
+                    увеличить его целевую посещаемость.
+                footer.services-list__footer.service-footer
+                  a(href="javascript:void(0);").services-list__link от 1000 руб.
+                  button.jump-btn
+                    i.fas.fa-arrow-right
+
+              li.services-list__item.hidden-md.visible-sm
+                .services-list__icon
+                  i.fas.fa-heartbeat
+                h5.services-list__title Поддержка
+                .services-list__text
+                  p.
+                    У Вас уже работающий бизнес и Вы 
+                    регулярно нуждаетесь в услугах веб-студии
+                    но брать сотрудника в штат и оборудовать 
+                    дополнительное рабочее место не выгодно? 
+                    Мы готовы взять эти проблемы на себя и 
+                    предоставлять нужные услуги  удаленно.
+                footer.services-list__footer.service-footer
+                  a(href="javascript:void(0);").services-list__link от 1000 руб.
+                  button.jump-btn
+                    i.fas.fa-arrow-right
+
+        // SERVICES-END
+
+        // FEATURES
+
+        section.features(style="background-image: url(img/features/bg.jpg)")
+          
+          .container
+            h2.features__title Кредо нашей компании
+
+            .features__text
+              p.
+                Мы хотим, чтобы Ваш бизнес был еще успешней и прибыльней. В нашем понимании 
+                качественный продукт — это достижение гармонии между эстетикой и 
+                маркетинговыми целями. Высокий уровень контроля качества, опыт 
+                работы и креативный подход к решению задач — залог 
+                нашего успеха.
+
+        // FEATURES-END
+
+        // DEVELOPMENT
+
+        section.development
+
+          .development-jumbotron
+            h2.development-jumbotron__title Разработка
+
+          .container
+            ul.development-list
+
+              li.development-list__item
+                a(href="javascript:void(0);").development-list__link
+                  h3.development-list__title Landing Page
+                  footer.development-footer
+                    a(href="javascript:void(0);").development-footer__link от 15000 руб.
+                    button.jump-btn.development__jump-btn
+                      i.fas.fa-arrow-right
+
+              li.development-list__item
+                a(href="javascript:void(0);").development-list__link
+                  h3.development-list__title Веб-сайт
+                  footer.development-footer
+                    a(href="javascript:void(0);").development-footer__link от 10000 руб.
+                    button.jump-btn.development__jump-btn
+                      i.fas.fa-arrow-right
+
+              li.development-list__item
+                a(href="javascript:void(0);").development-list__link
+                  h3.development-list__title Интернет магазин
+                  footer.development-footer
+                    a(href="javascript:void(0);").development-footer__link от 20000 руб.
+                    button.jump-btn.development__jump-btn
+                      i.fas.fa-arrow-right
+
+
+        // DEVELOPMENT-END
+
+
+    // FOOTER 
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

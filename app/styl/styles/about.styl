@@ -1,0 +1,41 @@
+.about
+    padding-top 170px
+    padding-bottom 105px
+
+.about__container
+    display flex
+    align-items center
+    justify-content space-between
+
+.about__title
+    font-size 48px
+    font-weight 700
+    letter-spacing 2.4px
+    font-family exo-font
+    
+.about__left
+    margin-right 30px
+
+.about__right
+    position relative
+    &::before
+        content 'we'
+        position absolute
+        text-transform uppercase
+        font-size 340px
+        font-weight 700
+        font-family Tahoma
+        letter-spacing 17px
+        color #c1c1c1
+        opacity 0.19
+        z-index -1
+        line-height 1
+        top -92px
+        left -80px
+
+.about__text
+    max-width 765px
+    p
+        letter-spacing 1px
+        font-size 20px
+        letter-spacing 0.9px

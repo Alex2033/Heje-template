@@ -1,0 +1,27 @@
+.navigation
+    position relative
+    border-bottom: 2px solid rgba(#000000, .32)
+
+.navigation__container
+    position relative
+
+.navigation-list
+    display flex
+    align-items center
+    justify-content flex-end
+    padding-top 25px
+    padding-bottom 25px
+
+.navigation-list__item
+    &:not(:last-child)
+        margin-right 40px
+
+.navigation-list__link
+    display block
+    font-size 30px
+    font-family josefin-font
+    color #000000
+    letter-spacing 1.5px
+    transition: color .2s ease 
+    &:hover
+        color accent

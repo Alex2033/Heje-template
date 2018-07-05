@@ -1,0 +1,66 @@
+.header
+    color #ffffff
+    min-height 700px
+    height 100vh
+    text-align center
+    display flex
+    width 100%
+    align-items center
+    justify-content center
+    &::before
+        content ''
+        position absolute
+        top 0
+        left 0
+        bottom 0
+        right 0
+        background-color rgba(purple-color, .67)
+
+.header__composition
+    max-width 1075px
+
+.header__text
+    max-width 835px
+    margin-left auto
+    margin-right auto
+    margin-bottom 50px
+    p
+        &:last-child
+            margin-bottom 0
+
+.dignities
+    margin-left auto
+    margin-right auto
+    display flex
+    width 100%
+    justify-content space-between
+    align-items stretch
+
+.dignities__item
+    margin 0 15px 30px
+    width calc(33.3333% - 30px)
+    max-width 255px
+
+.dignities__field
+    height 100%
+    border: 2px solid #ffffff
+    padding-top 20px
+    padding-bottom 25px
+    
+.dignities__icon
+    padding-left 6px
+    padding-right 6px
+    .svg-inline--fa
+        font-size 34px
+
+.dignities__number
+    font-size 48px
+    letter-spacing 2.4px
+    font-family josefin-font
+    font-weight 700
+    line-height 1.2
+
+.dignities__text
+    font-size 18px
+    letter-spacing .9px
+    font-family sans-font

@@ -1,0 +1,91 @@
+.services
+    padding-top 105px
+    padding-bottom 100px
+
+.services-list
+    display flex
+    margin 0 -15px
+    justify-content space-between
+
+.services-list__item
+    padding 15px 20px
+    margin 0 15px
+    width calc(33.3333% - 30px)
+    transition: background-color .2s ease
+    &:hover
+        background-color accent
+        .services-list__icon
+            .svg-inline--fa
+                color #ffffff
+
+        .services-list__title, .services-list__text
+            color #ffffff
+
+        .services-list__footer
+            opacity 1
+
+        .jump-btn
+            animation: jump-animation 2s infinite alternate
+
+.services-list__icon
+    margin-bottom 12px    
+    .svg-inline--fa
+        font-size 45px
+        color #00b9e7
+        transition: color .2s ease
+
+.services-list__title
+    font-weight 700
+    letter-spacing 1.2px
+    font-size 20px
+    margin-bottom 10px
+
+.services-list__text
+    transition: color .2s ease
+    p
+        margin-bottom 20px
+
+.services-list__footer
+    display flex
+    justify-content space-between
+    align-items center
+    opacity 0
+    transition: opacity .2s ease
+
+.services-list__link
+    display block
+    font-size 18px
+    line-height 39px
+    height 39px
+    color #ffffff
+    padding-left 20px
+    padding-right 20px
+    border: 2px solid #ffffff
+    transition: border-color .2s ease, background-color .2s ease
+    &:hover
+        background-color turquoise-color
+        border-color turquoise-color
+
+.jump-btn
+    border: 0
+    background-color transparent
+    cursor pointer
+    .svg-inline--fa
+        font-size 25px
+        color #ffffff
+    &:hover
+        animation: jump-animation 2s infinite alternate
+    
+@keyframes jump-animation
+    10%
+        transform: translateX(13px)
+    25%
+        transform: translateX(0)
+    50%
+        transform: translateX(8px)
+    75%
+        transform: translateX(0)
+    90%
+        transform: translateX(5px)
+    100%
+        transform: translateX(0)
